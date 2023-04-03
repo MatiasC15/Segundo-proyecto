@@ -95,6 +95,7 @@ a{
   }
   .nav_container nav ul li a:hover {
     color: var(--some-buttons-hover);
+    transition: .2s all;
   }
   .number_of_products {
     display: flex;
