@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="../style/index.css" />
+    <title>Break or Fix Tecno Store</title>
+  </head>
+  <body>
+    <header class="header_container">
+      <section class="hero">
+        <h4 class="logo">
+          Break or Fix <br /><span class="logo">TecnoStore</span>
+        </h4>
+      </section>
+      <div class="search_input_container">
+        <input
+          type="text"
+          name="search"
+          id="search"
+          placeholder="Busca tu producto aqui"
+        />
+        <div class="search_btn_container">
+          <button class="search_btn">Buscar</button>
+        </div>
+      </div>
+      <div class="nav_container">
+        <nav>
+          <ul>
+            <li>
+              <a href="carrito.html" class="cart active"
+                ><i class="bi bi-cart"></i> Carrito</a
+              >
+              <span class="number_of_products">0</span>
+            </li>
+            <li class="login active">
+              <i class="bi bi-box-arrow-in-right"></i
+              ><a href="login.html">Login</a>
+            </li>
+            <li class="register active">
+              <i class="bi bi-journal-check"></i
+              ><a href="register.html">Registrate</a>
+            </li>
+            <li class="abouts_us active">
+              <i class="bi bi-person-fill"></i>Sobre Nosotros
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="container">
+      <aside>
+        <nav>
+          <ul>
+            <li>
+              <button class="btn_menu btn_categorie active">
+                <i class="bi bi-caret-right-fill"></i>Todos los productos
+              </button>
+            </li>
+            <li>
+              <button class="btn_menu btn_categorie active">
+                <i class="bi bi-caret-right"></i>Perifericos
+              </button>
+            </li>
+            <li>
+              <button class="btn_menu btn_categorie active">
+                <i class="bi bi-caret-right"></i>Componentes
+              </button>
+            </li>
+            <li>
+              <button class="btn_menu btn_categorie active">
+                <i class="bi bi-caret-right"></i>Notebooks
+              </button>
+            </li>
+          </ul>
+        </nav>
+        <footer>
+          <p>&copy, Break or Fix TecnoStore</p>
+        </footer>
+      </aside>
+      <main>
+        <h2 class="principal_title">Todos los productos</h2>
+
+        <div class="products_container">
+          <div class="product">
+            <img
+              class="product_image"
+              src="https://compragamer.net/pga/imagenes_publicadas/compragamer_Imganen_general_30992_Auriculares_HyperX_Cloud_Revolver_7.1_3dd11be0-grn.jpg"
+              alt="Auriculares HyperX Cloud 7.1"
+            />
+            <div class="product_info_container">
+              <h3 class="product_name">Producto 1</h3>
+              <p class="product_price">Precio</p>
+              <button class="add_product">Agregar al carrito</button>
+            </div>
+          </div>
+          <div class="product">
+            <img
+              class="product_image"
+              src="https://compragamer.net/pga/imagenes_publicadas/compragamer_Imganen_general_23654_Teclado_Mecanico_Marvo_Scorpion_KG950_Switch_Red_RGB_0c0838f7-med.jpg"
+              alt="Teclado Marvo Scorpion KG950"
+            />
+            <div class="product_info_container">
+              <h3 class="product_name">Producto 2</h3>
+              <p class="product_price">Precio</p>
+              <button class="add_product">Agregar al carrito</button>
+            </div>
+          </div>
+          <div class="product">
+            <img
+              class="product_image"
+              src="https://compragamer.net/pga/imagenes_publicadas/compragamer_Imganen_general_16575_WebCam_Logitech_C920S_PRO_Full_HD_1080p_USB_7aedd3aa-med.jpg"
+              alt="Webcam Logitech C920S PRO FULL HD"
+            />
+            <div class="product_info_container">
+              <h3 class="product_name">Producto 3</h3>
+              <p class="product_price">Precio</p>
+              <button class="add_product">Agregar al carrito</button>
+            </div>
+          </div>
+          <div class="product">
+            <img
+              class="product_image"
+              src="https://compragamer.net/pga/imagenes_publicadas/compragamer_Imganen_general_25378_Mouse_ASUS_P512_ROG_Strix_Impact_II_Electro_Punk_Pink_0aa6161e-med.jpg"
+              alt="Mouse Asus P512 ROG STRIX"
+            />
+            <div class="product_info_container">
+              <h3 class="product_name">Producto 4</h3>
+              <p class="product_price">Precio</p>
+              <button class="add_product">Agregar al carrito</button>
+            </div>
+          </div>
+          <div class="product">
+            <img
+              class="product_image"
+              src="https://compragamer.net/pga/imagenes_publicadas/compragamer_Imganen_general_25657_Parlantes_Logitech_Z407_2.1_Bluetooth_5.0_200v_80W_aa7e5d8d-med.jpg"
+              alt="Parlantes Logitech Z407 Bluetooth 5.0 200V"
+            />
+            <div class="product_info_container">
+              <h3 class="product_name">Producto 5</h3>
+              <p class="product_price">Precio</p>
+              <button class="add_product">Agregar al carrito</button>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="../js/index.js"></script>
+  </body>
+</html>
