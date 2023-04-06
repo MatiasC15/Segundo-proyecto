@@ -34,20 +34,21 @@
           <ul>
             <li class="cart_container">
               <a href="carrito.html" class="cart active"
-                ><i class="bi bi-cart"></i> Carrito <span class="number_of_products">1</span></a
-              >
-             
+                ><i class="bi bi-cart"></i> Carrito
+                <span class="number_of_products">1</span></a>
             </li>
             <li class="login active">
-             
-              <a href="login.html"> <i class="bi bi-box-arrow-in-right"></i>Login</a>
+              <a href="login.html">
+                <i class="bi bi-box-arrow-in-right"></i>Login</a
+              >
             </li>
             <li class="register active">
-              <a href="register.html"><i class="bi bi-journal-check"></i
-              >Registrate</a>
+              <a href="register.html"
+                ><i class="bi bi-journal-check"></i>Registrate</a
+              >
             </li>
             <li class="abouts_us active">
-             <a href="#"> <i class="bi bi-person-fill"></i>Sobre nosotros</a>
+              <a href="#"> <i class="bi bi-person-fill"></i>Sobre nosotros</a>
             </li>
           </ul>
         </nav>
@@ -58,23 +59,33 @@
         <nav>
           <ul class="menu">
             <li>
-              <button class="btn_menu btn_categorie active">
+              <button id="all_products" class="btn_menu btn_category active">
                 <i class="bi bi-caret-right-fill"></i>Todos los productos
               </button>
             </li>
             <li>
-              <button class="btn_menu btn_categorie ">
+              <button id="perifericos" class="btn_menu btn_category">
                 <i class="bi bi-caret-right"></i>Perifericos
               </button>
             </li>
             <li>
-              <button class="btn_menu btn_categorie ">
+              <button id="componentes" class="btn_menu btn_category">
                 <i class="bi bi-caret-right"></i>Componentes
               </button>
             </li>
             <li>
-              <button class="btn_menu btn_categorie ">
-                <i class="bi bi-caret-right"></i>Notebooks
+              <button id="monitores" class="btn_menu btn_category">
+                <i class="bi bi-caret-right"></i>Monitores
+              </button>
+            </li>
+            <li>
+              <button id="sillas" class="btn_menu btn_category">
+                <i class="bi bi-caret-right"></i>Sillas
+              </button>
+            </li>
+            <li>
+              <button id="audio" class="btn_menu btn_category">
+                <i class="bi bi-caret-right"></i>Audio
               </button>
             </li>
           </ul>
@@ -84,192 +95,10 @@
         </footer>
       </aside>
       <main>
-        <h2 class="principal_title">Todos los productos</h2>
+        <h2 id= "principal_title" class="principal_title">Todos los productos</h2>
 
-        <div class="products_container">
-          <div class="product">
-            <img
-              class="product_image"
-              src="https://compragamer.net/pga/imagenes_publicadas/compragamer_Imganen_general_30992_Auriculares_HyperX_Cloud_Revolver_7.1_3dd11be0-grn.jpg"
-              alt="Auriculares HyperX Cloud 7.1"
-            />
-            <div class="product_info_container">
-              <h3 class="product_name">Auriculares HyperX Cloud Revolver 7.1</h3>
-              <p class="product_price">$35380</p>
-              <button class="add_product">Agregar al carrito</button>
-            </div>
-          </div>
-          <div class="product">
-            <img
-              class="product_image"
-              src="https://compragamer.net/pga/imagenes_publicadas/compragamer_Imganen_general_33534_Monitor_Samsung_19__A330N_HDMI_825ccd95-grn.jpg"
-              alt="Monitor Samsung 19 A330N"
-            />
-            <div class="product_info_container">
-              <h3 class="product_name">Monitor Samsung 19" A330N</h3>
-              <p class="product_price">$48250</p>
-              <button class="add_product">Agregar al carrito</button>
-            </div>
-          </div>
-          <div class="product">
-            <img
-              class="product_image"
-              src="https://compragamer.net/pga/imagenes_publicadas/compragamer_Imganen_general_25657_Parlantes_Logitech_Z407_2.1_Bluetooth_5.0_200v_80W_aa7e5d8d-grn.jpg"
-              alt="Parlantes Logitech Z407"
-            />
-            <div class="product_info_container">
-              <h3 class="product_name">Parlantes Logitech Z407</h3>
-              <p class="product_price">$44500</p>
-              <button class="add_product">Agregar al carrito</button>
-            </div>
-          </div>
-          <div class="product">
-            <img
-              class="product_image"
-              src="https://compragamer.net/pga/imagenes_publicadas/compragamer_Imganen_general_6000_Silla_Gamer_Corsair_T1_Race_Black_Red__5df97cb1-grn.jpg"
-              alt="Silla gamers Corsair T1 Race Black"
-            />
-            <div class="product_info_container">
-              <h3 class="product_name">Silla gamers Corsair T1 Race Black</h3>
-              <p class="product_price">$124560</p>
-              <button class="add_product">Agregar al carrito</button>
-            </div>
-          </div>
-          <div class="product">
-            <img
-              class="product_image"
-              src=" https://compragamer.net/pga/imagenes_publicadas/compragamer_Imganen_general_31776_Memoria_GeiL_DDR4_16GB_3000MHz_Super_Luce_RGB_Black_646b61f7-grn.jpg"
-              alt="Memoria GeiL DDR4 3000 MHZ"
-            />
-            <div class="product_info_container">
-              <h3 class="product_name">Memoria GeiL DDR4 16GB</h3>
-              <p class="product_price">$35950</p>
-              <button class="add_product">Agregar al carrito</button>
-            </div>
-          </div>
-          <!-- -------------------------------------------------------------------------------se repite producto 5---------------------------------------------------------------------- -->
-          <div class="product">
-            <img
-              class="product_image"
-              src="https://compragamer.net/pga/imagenes_publicadas/compragamer_Imganen_general_23310_Fuente_ASUS_TUF_550W_80_Plus_Bronze_550B_cfcb396e-grn.jpg"
-              alt="Fuente ASUS TUF 80 plus Bronze"
-            />
-            <div class="product_info_container">
-              <h3 class="product_name">Fuente ASUS TUF 80 plus Bronze</h3>
-              <p class="product_price">$33050</p>
-              <button class="add_product">Agregar al carrito</button>
-            </div>
-          </div>
-          <div class="product">
-            <img
-              class="product_image"
-              src="https://compragamer.net/pga/imagenes_publicadas/compragamer_Imganen_general_23295_Fuente_ASUS_ROG_THOR_850W_80_Plus_Platinum_850P_Full_modular_4de04ae6-grn.jpg"
-              alt="Fuente ASUS ROG THOR 850W 80 Plus Platinum 850P Full modular"
-            />
-            <div class="product_info_container">
-              <h3 class="product_name">Fuente ASUS ROG THOR 850W 80 Plus</h3>
-              <p class="product_price">$33050</p>
-              <button class="add_product">Agregar al carrito</button>
-            </div>
-          </div>
-          <div class="product">
-            <img
-              class="product_image"
-              src="https://compragamer.net/pga/imagenes_publicadas/compragamer_Imganen_general_33637_Cooler_CPU_Thermaltake_UX100_ARGB_12a77695-grn.jpg"
-              alt="Cooler CPU Thermaltake UX1000 ARGB"
-            />
-            <div class="product_info_container">
-              <h3 class="product_name">Cooler CPU Thermaltake UX1000 ARGB</h3>
-              <p class="product_price">$6000</p>
-              <button class="add_product">Agregar al carrito</button>
-            </div>
-          </div>
-          <div class="product">
-            <img
-              class="product_image"
-              src="https://compragamer.net/pga/imagenes_publicadas/compragamer_Imganen_general_16752_Procesador_AMD_RYZEN_3_3200G_4.0GHz_Turbo___Radeon_Vega_8_AM4_Wraith_Stealth_Cooler_f414a507-grn.jpg"
-              alt="Procesador AMD RYZEN 3 3200G 4.O GHz"
-            />
-            <div class="product_info_container">
-              <h3 class="product_name">Procesador AMD RYZEN 3 3200G 4.O GHz</h3>
-              <p class="product_price">$79860</p>
-              <button class="add_product">Agregar al carrito</button>
-            </div>
-          </div>
-          <div class="product">
-              <img
-                class="product_image"
-                src="https://compragamer.net/pga/imagenes_publicadas/compragamer_Imganen_general_27673_Procesador_AMD_Ryzen_7_5700G_4.6GHz_Turbo___Wraith_Stealth_Cooler_cb33e4fa-grn.jpg"
-                alt="Procesador AMD Ryzen 7 5700G 4.6GHz Turbo + Wraith Stealth Cooler"
-              />
-              <div class="product_info_container">
-                <h3 class="product_name">Procesador AMD Ryzen 7 5700G </h3>
-                <p class="product_price">$109200</p>
-                <button class="add_product">Agregar al carrito</button>
-              </div>
-            </div>
-            <!-- -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------          -->
-            <div class="product">
-              <img
-                class="product_image"
-                src="https://compragamer.net/pga/imagenes_publicadas/compragamer_Imganen_general_23175_Mouse_ASUS_ROG_CHAKRAM_RF_Inalambrico_16K_DPI_RGB_c5a561cb-grn.jpg"
-                alt="Mouse ASUS ROG CHAKRAM RF Inalambrico 16K DPI RGB"
-              />
-              <div class="product_info_container">
-                <h3 class="product_name">Mouse ASUS ROG CHAKRAM RF </h3>
-                <p class="product_price">$39510</p>
-                <button class="add_product">Agregar al carrito</button>
-              </div>
-            </div>
-            <div class="product">
-              <img
-                class="product_image"
-                src="https://compragamer.net/pga/imagenes_publicadas/compragamer_Imganen_general_16569_Mouse_Logitech_G502_Lightspeed_Wireless_RGB_Lightsync_f98d2f40-grn.jpg"
-                alt="Mouse Logitech G502 Lightspeed Wireless RGB Lightsync"
-              />
-              <div class="product_info_container">
-                <h3 class="product_name">Mouse Logitech G502 </h3>
-                <p class="product_price">$31340</p>
-                <button class="add_product">Agregar al carrito</button>
-              </div>
-            </div>
-            <div class="product">
-              <img
-                class="product_image"
-                src="https://compragamer.net/pga/imagenes_publicadas/compragamer_Imganen_general_34911_Mother_Asrock_X670E_Taichi_Carrara_AM5_00f2f1c2-grn.jpg"
-                alt="Mother Asrock X670E Taichi Carrara AM5"
-              />
-              <div class="product_info_container">
-                <h3 class="product_name">Mother Asrock X670E</h3>
-                <p class="product_price">$313220</p>
-                <button class="add_product">Agregar al carrito</button>
-              </div>
-            </div>
-            <div class="product">
-              <img
-                class="product_image"
-                src="https://compragamer.net/pga/imagenes_publicadas/compragamer_Imganen_general_34460_Mother_Asrock_X670E_Steel_Legend_AM5_75fc36a9-grn.jpg"
-                alt="Mother Asrock X670E Steel Legend AM5"
-              />
-              <div class="product_info_container">
-                <h3 class="product_name">Mother Asrock X670E Steel Legend AM5</h3>
-                <p class="product_price">$219200</p>
-                <button class="add_product">Agregar al carrito</button>
-              </div>
-            </div>
-            <div class="product">
-              <img
-                class="product_image"
-                src="https://compragamer.net/pga/imagenes_publicadas/compragamer_Imganen_general_35862_Mouse_Logitech_G502X_Black_Lightforce_Hero_25K_060f8ccf-grn.jpg"
-                alt="Mouse Logitech G502X Black Lightforce Hero 25K"
-              />
-              <div class="product_info_container">
-                <h3 class="product_name">Mouse Logitech G502X Black</h3>
-                <p class="product_price">$31020</p>
-                <button class="add_product">Agregar al carrito</button>
-              </div>
-            </div>
-        </div>
+        <div id="products_container" class="products_container">
+          <!-- EL contenido del products_container se hace con js -->
       </main>
     </div>
 

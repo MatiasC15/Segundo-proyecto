@@ -137,9 +137,10 @@ aside {
 }
 .btn_menu {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   gap: 1rem;
+  width: 100%;
   height: 4rem;
   background-color: transparent;
   border: 0;
@@ -149,11 +150,12 @@ aside {
   font-weight: 600;
 }
 .btn_menu.active {
-  width: 100%;
   background-color: var(--main-color);
   color: var(--font-color);
   border-top-left-radius: 1rem;
   border-bottom-left-radius: 1rem;
+  transition: 0.4s all;
+  justify-content: center;
 }
 
 footer p {
@@ -176,12 +178,11 @@ main {
 }
 .products_container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1.5rem;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
 }
 .product {
-  border-width: 100%;
-  border: 0.1px solid var(--lightblue);
+  border: 1px solid var(--lightblue);
   border-radius: 1rem;
 }
 .product_image {
@@ -189,7 +190,6 @@ main {
   border-radius: 1rem;
 }
 .product_info_container {
-  height: 8rem;
   max-width: 100%;
   color: white;
   background-color: var(--main-color);
@@ -200,13 +200,22 @@ main {
   position: relative;
   text-align: center;
   display: flex;
+  align-items: center;
   flex-direction: column;
   gap: 0.25rem;
 }
 .product_name {
   font-size: 1rem;
+  margin-top: 1rem;
+}
+.product_price{
+  font-size: 1.5rem;
+  margin: 1rem auto;
+  font-weight: 400;
 }
 .add_product {
+  max-width: 100%;
+  height: 3rem;
   border: 0;
   background-color: var(--some-buttons);
   color: white;
