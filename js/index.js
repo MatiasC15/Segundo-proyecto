@@ -26,7 +26,7 @@ let products = [
   },
   {
     id: "monitor-02",
-    name: "TV SAMSUNG 65'' NEO QLED 4K  120Hz ",
+    name: "Monitor LG LCD 49 49WL95C Curvo ",
     image:
       "https://compragamer.net/pga/imagenes_publicadas/compragamer_Imganen_general_30683_Monitor_LG_LCD_49__49WL95C_Curvo_Ultra_Wide_DUAL_QHD_b4c30ae3-grn.jpg",
     category: {
@@ -312,9 +312,9 @@ function chargeProducts(chosenProducts) {
   productsContainer.innerHTML = "";
 
   chosenProducts.forEach((product) => {
-    const div = document.createElement("div");
-    div.classList.add("product");
-    div.innerHTML = `  <img
+    const divProduct = document.createElement("div");
+    divProduct.classList.add("product");
+    divProduct.innerHTML = `  <img
                       class="product_image"
                       src="${product.image}"
                       alt="${product.name}"
@@ -325,7 +325,7 @@ function chargeProducts(chosenProducts) {
                        <button class="add_product" id="${product.id}">Agregar al carrito</button>
                     </div>`;
 
-    productsContainer.append(div);
+    productsContainer.append(divProduct);
   });
   updateAddButtons()
 }
