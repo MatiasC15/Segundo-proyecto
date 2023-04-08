@@ -104,7 +104,8 @@ a {
   color: var(--some-buttons-hover);
   transition: 0.2s all;
 }
-.number_of_products {
+.number_of_products,
+.number_of_products_mobile {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -177,45 +178,24 @@ main {
 .principal_title {
   color: var(--main-color);
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 3rem;
   margin-bottom: 2rem;
 }
-/* .products_container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 2rem;
-} */
-/* .product {
-  border: 1px solid var(--lightblue);
-  border-radius: 1rem;
-} */
-/* .product_image {
-  max-width: 100%;
-  border-radius: 1rem;
-} */
-/* .product_info_container {
-  max-width: 100%;
-  color: white;
-  background-color: var(--main-color);
-  padding: 0.5rem;
-  border-radius: 1rem;
-  border-top-right-radius: 0;
-  border-top-left-radius: 0;
-  position: relative;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  gap: 0.30rem;
+.product_container{
+    display: flex;
+    gap: 4rem;
 }
-.product_name {
-  letter-spacing: 0.1rem;
-  font-size: 1rem;
-  margin-top: 1rem;
+.product_details{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+.product_details h3 {
+    font-size: 2rem;
 }
 .product_price{
   font-size: 1.5rem;
-  margin: 1rem auto;
   font-weight: 400;
 }
 .add_product {
@@ -228,12 +208,31 @@ main {
   text-transform: uppercase;
   border-radius: 0.3rem;
   cursor: pointer;
-  border: 2px solid var(--main-color);
   transition: background-color 0.2s, color 0.2s;
+}
+.buy_now {
+  max-width: 100%;
+  height: 3rem;
+  border: 0;
+  background-color: var(--some-buttons);
+  color: white;
+  padding: 0.5rem;
+  text-transform: uppercase;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+}
+.buttons{
+    display: flex;
+    gap: 5rem;
+    justify-content: space-evenly;
 }
 .add_product:hover {
   background-color: var(--some-buttons-hover);
-} */
+}
+.buy_now:hover {
+  background-color: var(--some-buttons-hover);
+}
 .mobile_header{
   display:none
 }

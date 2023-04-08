@@ -2,8 +2,7 @@ let products = [
   {
     id: "periferico-01",
     name: "Auriculares HyperX Cloud",
-    image:
-      "https://compragamer.net/pga/imagenes_publicadas/compragamer_Imganen_general_30992_Auriculares_HyperX_Cloud_Revolver_7.1_3dd11be0-grn.jpg",
+    image:"https://compragamer.net/pga/imagenes_publicadas/compragamer_Imganen_general_30992_Auriculares_HyperX_Cloud_Revolver_7.1_3dd11be0-grn.jpg",
     category: {
       name: "Perifericos",
       id: "perifericos",
@@ -13,7 +12,7 @@ let products = [
   },
 
   {
-    id: "monitor 01",
+    id: "monitor-01",
     name: "Monitor Samsung 19 A330N",
     image:
       "https://compragamer.net/pga/imagenes_publicadas/compragamer_Imganen_general_33534_Monitor_Samsung_19__A330N_HDMI_825ccd95-grn.jpg",
@@ -315,20 +314,22 @@ function chargeProducts(chosenProducts) {
   chosenProducts.forEach((product) => {
     const divProduct = document.createElement("div");
     divProduct.classList.add("product");
-    divProduct.innerHTML = `  <img
-                      class="product_image"
-                      src="${product.image}"
-                      alt="${product.name}"
-                    />
-                    <div class="product_info_container">
-                       <h3 class="product_name">${product.name}</h3>
-                       <p class="product_price">$ ${product.price}</p>
-                       <button class="add_product" id="${product.id}">Agregar al carrito</button>
-                    </div>`;
+    divProduct.innerHTML = ` <img
+    class="product_image"
+    src="${product.image}"
+    alt="${product.name}"
+  />
+            <div class="product_info_container">
+                <h3 class="product_name">${product.name}</h3>        
+                <p class="product_price">$ ${product.price}</p>
+                <button class="add_product" id="${product.id}">Agregar al carrito</button>
+                <button class="detail_product" data-id="${product.id}">Ver detalles</button>
+            </div>`;
 
     productsContainer.append(divProduct);
   });
   updateAddButtons();
+  
 }
 
 chargeProducts(products);
@@ -366,14 +367,13 @@ function updateAddButtons() {
 let productsInCart;
 const productsInCartLS = localStorage.getItem("products");
 
-if(productsInCartLS){
+if (productsInCartLS) {
   productsInCart = JSON.parse(productsInCartLS);
   updateNumberOfProducts();
-  updateNumberOfProductsMobile()
-}else{
+  updateNumberOfProductsMobile();
+} else {
   productsInCart = [];
-} 
-
+}
 
 function addCart(e) {
   const idButton = e.currentTarget.id;
@@ -389,22 +389,24 @@ function addCart(e) {
     productsInCart.push(addedProduct);
   }
   updateNumberOfProducts();
-  updateNumberOfProductsMobile()
+  updateNumberOfProductsMobile();
 
-  
   localStorage.setItem("products", JSON.stringify(productsInCart));
 }
 
 function updateNumberOfProducts() {
   let newNumber = productsInCart.reduce(
-    (acc, product) => acc + product.quantity,0);
+    (acc, product) => acc + product.quantity,
+    0
+  );
 
   numberOfProducts.innerText = newNumber;
 }
 function updateNumberOfProductsMobile() {
   let newNumber = productsInCart.reduce(
-    (acc, product) => acc + product.quantity,0);
+    (acc, product) => acc + product.quantity,
+    0
+  );
 
   numberOfProductsMobile.innerText = newNumber;
 }
-
