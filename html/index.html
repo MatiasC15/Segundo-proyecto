@@ -58,7 +58,15 @@
       </div>
     </header>
     <div class="wrapper">
+      <header class="mobile_header hero">
+        <h4 class="logo">
+         Broke or Fix TecnoStore 
+        </h4>
+         
+        <button class="open_menu" id="open-menu"> <i class="bi bi-list"></i> </button>
+      </header>
       <aside>
+        <button class="close_menu" id="close-menu"> <i class="bi bi-x"></i> </button>
         <nav>
           <ul class="menu">
             <li>
@@ -92,17 +100,40 @@
               </button>
             </li>
           </ul>
+          <ul class="nav_mobile">
+            <li class="cart_container">
+              <a href="carrito.html" class="cart active"
+                ><i class="bi bi-cart"></i> Carrito <span id="number_of_products" class="number_of_products">0</span></a
+              >
+             
+            </li>
+            <li class="login active">
+              <a href="login.html">
+                <i class="bi bi-box-arrow-in-right"></i>Login</a
+              >
+            </li>
+            <li class="register active">
+              <a href="register.html"
+                ><i class="bi bi-journal-check"></i>Registrate</a
+              >
+            </li>
+            <li class="abouts_us active">
+              <a href="#"> <i class="bi bi-person-fill"></i>Sobre nosotros</a>
+            </li>
+          </ul>
         </nav>
         <footer>
           <p>&copy Broke or Fix TecnoStore</p>
         </footer>
       </aside>
+      
       <main>
         <h2 id= "principal_title" class="principal_title">Todos los productos</h2>
         <div id="products_container" class="products_container">   
       </main>
     </div>
 
+    <script src="../js/menu.js"></script>
     <script src="../js/index.js"></script>
   </body>
 </html>
