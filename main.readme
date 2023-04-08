@@ -231,3 +231,85 @@
             </div>
           </div> -->
         </div>
+
+
+
+        -----------------------------------------------------------CARRITO------------------------------------------------------------------------------------------
+         <div class="cart_product">
+            <img
+            class="cart_product_image"
+              src="https://compragamer.net/pga/imagenes_publicadas/compragamer_Imganen_general_30992_Auriculares_HyperX_Cloud_Revolver_7.1_3dd11be0-grn.jpg"
+              alt="Auriculares HyperX Cloud 7.1"
+            />
+            <div class="cart_product_name">
+              <small>Titulo</small>
+              <h3>Producto 1</h3>
+            </div>
+            <div class="cart_product_quantity">
+              <small>Cantidad</small>
+              <p>1</p>
+            </div>
+            <div class="cart_product_price">
+              <small>Precio</small>
+              <p>$1000</p>
+            </div>
+            <div class="cart_product_subtotal">
+              <small>Subtotal</small>
+              <p>$2000</p>
+            </div>
+            <div>
+              <button class="erase_btn"> <i class="bi bi-trash3"></i></button>
+            </div>
+          </div>
+          <div class="cart_product">
+            <img
+            class="cart_product_image"
+              src="https://compragamer.net/pga/imagenes_publicadas/compragamer_Imganen_general_25657_Parlantes_Logitech_Z407_2.1_Bluetooth_5.0_200v_80W_aa7e5d8d-grn.jpg"
+              alt="Parlantes Logitech"
+            />
+            <div class="cart_product_name">
+              <small>Titulo</small>
+              <h3>Producto 1</h3>
+            </div>
+            <div class="cart_product_quantity">
+              <small>Cantidad</small>
+              <p>1</p>
+            </div>
+            <div class="cart_product_price">
+              <small>Precio</small>
+              <p>$1000</p>
+            </div>
+            <div class="cart_product_subtotal">
+              <small>Subtotal</small>
+              <p>$2000</p>
+            </div>
+            <div>
+              <button class="erase_btn"> <i class="bi bi-trash3"></i></button>
+            </div>
+          </div>
+          <div class="cart_product">
+            <img
+            class="cart_product_image"
+              src="https://compragamer.net/pga/imagenes_publicadas/compragamer_Imganen_general_33534_Monitor_Samsung_19__A330N_HDMI_825ccd95-grn.jpg"
+              alt="Monitor Samsung"
+            />
+            <div class="cart_product_name">
+              <small>Titulo</small>
+              <h3>Producto 2</h3>
+            </div>
+            <div class="cart_product_quantity">
+              <small>Cantidad</small>
+              <p>1</p>
+            </div>
+            <div class="cart_product_price">
+              <small>Precio</small>
+              <p>$1000</p>
+            </div>
+            <div class="cart_product_subtotal">
+              <small>Subtotal</small>
+              <p>$2000</p>
+            </div>
+            <div >
+              <button class="erase_btn"><i class="bi bi-trash3"></i></button>
+            </div>
+          </div>

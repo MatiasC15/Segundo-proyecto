@@ -32,6 +32,7 @@ ul {
 }
 a{
     text-decoration: none;
+    color: inherit;
 }
 /*--------------------------------Header-----------------------------------------------------------------------------------------------------------*/
 .header_container {
@@ -48,6 +49,7 @@ a{
   align-items: center;
 }
 .hero {
+
   font-size: 1.5rem;
   margin-left: 3rem;
   text-align: center;
@@ -210,12 +212,14 @@ main {
   padding-right: 1.5rem;
   border-radius: 1rem;
   color: white;
+
 }
 .cart_product_name small,
 .cart_product_quantity small,
 .cart_product_price small,
 .cart_product_subtotal small {
   font-size: 1rem;
+
 }
 .erase_btn {
   width: 3rem;

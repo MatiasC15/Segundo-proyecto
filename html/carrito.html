@@ -76,100 +76,23 @@
       <h2 class="principal_title">Productos en el carrito</h2>
 
       <div class="cart_container">
-        <p class="empty_cart">
+        <p id="empty_cart" class="empty_cart">
           Tu carrito esta vacio<i class="bi bi-emoji-frown-fill"></i>
         </p>
 
-        <div class="cart_products disabled">
-          <div class="cart_product">
-            <img
-            class="cart_product_image"
-              src="https://compragamer.net/pga/imagenes_publicadas/compragamer_Imganen_general_30992_Auriculares_HyperX_Cloud_Revolver_7.1_3dd11be0-grn.jpg"
-              alt="Auriculares HyperX Cloud 7.1"
-            />
-            <div class="cart_product_name">
-              <small>Titulo</small>
-              <h3>Producto 1</h3>
-            </div>
-            <div class="cart_product_quantity">
-              <small>Cantidad</small>
-              <p>1</p>
-            </div>
-            <div class="cart_product_price">
-              <small>Precio</small>
-              <p>$1000</p>
-            </div>
-            <div class="cart_product_subtotal">
-              <small>Subtotal</small>
-              <p>$2000</p>
-            </div>
-            <div>
-              <button class="erase_btn"> <i class="bi bi-trash3"></i></button>
-            </div>
-          </div>
-          <div class="cart_product">
-            <img
-            class="cart_product_image"
-              src="https://compragamer.net/pga/imagenes_publicadas/compragamer_Imganen_general_25657_Parlantes_Logitech_Z407_2.1_Bluetooth_5.0_200v_80W_aa7e5d8d-grn.jpg"
-              alt="Parlantes Logitech"
-            />
-            <div class="cart_product_name">
-              <small>Titulo</small>
-              <h3>Producto 1</h3>
-            </div>
-            <div class="cart_product_quantity">
-              <small>Cantidad</small>
-              <p>1</p>
-            </div>
-            <div class="cart_product_price">
-              <small>Precio</small>
-              <p>$1000</p>
-            </div>
-            <div class="cart_product_subtotal">
-              <small>Subtotal</small>
-              <p>$2000</p>
-            </div>
-            <div>
-              <button class="erase_btn"> <i class="bi bi-trash3"></i></button>
-            </div>
-          </div>
-          <div class="cart_product">
-            <img
-            class="cart_product_image"
-              src="https://compragamer.net/pga/imagenes_publicadas/compragamer_Imganen_general_33534_Monitor_Samsung_19__A330N_HDMI_825ccd95-grn.jpg"
-              alt="Monitor Samsung"
-            />
-            <div class="cart_product_name">
-              <small>Titulo</small>
-              <h3>Producto 2</h3>
-            </div>
-            <div class="cart_prdouct_quantity">
-              <small>Cantidad</small>
-              <p>1</p>
-            </div>
-            <div class="cart_product_price">
-              <small>Precio</small>
-              <p>$1000</p>
-            </div>
-            <div class="cart_product_subtotal">
-              <small>Subtotal</small>
-              <p>$2000</p>
-            </div>
-            <div >
-              <button class="erase_btn"><i class="bi bi-trash3"></i></button>
-            </div>
-          </div>
+        <div id="products_container" class="cart_products disabled">
+          <!-- SE COMPLETO CON JS  -->
         </div>
-        <div class="cart_actions disabled">
+        <div id="cart_actions" class="cart_actions disabled">
           <div class="cart_actions_left">
-            <button class="cart_actions_left_deleteAll">Vaciar carrito</button>
+            <button id="deleteAll" class="cart_actions_left_deleteAll">Vaciar carrito</button>
           </div>
           <div class="cart_actions_right">
-            <div class="cart_actions_right_total">
+            <div id="total_price"  class="cart_actions_right_total">
               <p>Total :</p>
-              <p id="total">$3000</p>
+              <p id="total"></p>
             </div>
-            <button class="cart_actions_right_btn_buynow">Comprar ahora</button>
+            <button id="buy_btn" class="cart_actions_right_btn_buynow">Comprar ahora</button>
           </div>
         </div>
       </div>
@@ -177,5 +100,6 @@
     </div>
     
     <script src="../js/carrito.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   </body>
 </html>
