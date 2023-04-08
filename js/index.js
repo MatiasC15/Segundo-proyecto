@@ -306,7 +306,8 @@ const productsContainer = document.querySelector("#products_container");
 const categoriesButtons = document.querySelectorAll(".btn_category");
 const principalTitle = document.querySelector("#principal_title");
 let addButton = document.querySelectorAll(".add_product");
-const numberOfProducts = document.querySelector("#number_of_products");
+const numberOfProducts = document.querySelector(".number_of_products");
+const numberOfProductsMobile = document.querySelector(".number_of_products_mobile");
 
 function chargeProducts(chosenProducts) {
   productsContainer.innerHTML = "";
@@ -368,6 +369,7 @@ const productsInCartLS = localStorage.getItem("products");
 if(productsInCartLS){
   productsInCart = JSON.parse(productsInCartLS);
   updateNumberOfProducts();
+  updateNumberOfProductsMobile()
 }else{
   productsInCart = [];
 } 
@@ -387,6 +389,7 @@ function addCart(e) {
     productsInCart.push(addedProduct);
   }
   updateNumberOfProducts();
+  updateNumberOfProductsMobile()
 
   
   localStorage.setItem("products", JSON.stringify(productsInCart));
@@ -397,5 +400,11 @@ function updateNumberOfProducts() {
     (acc, product) => acc + product.quantity,0);
 
   numberOfProducts.innerText = newNumber;
+}
+function updateNumberOfProductsMobile() {
+  let newNumber = productsInCart.reduce(
+    (acc, product) => acc + product.quantity,0);
+
+  numberOfProductsMobile.innerText = newNumber;
 }
 

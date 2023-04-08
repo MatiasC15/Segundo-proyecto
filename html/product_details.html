@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/product_details.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header_container">
+        <section class="hero">
+          <h4 class="logo">
+            <a href="index.html"
+              >Broke or Fix <br /><span class="logo">TecnoStore</span></a
+            >
+          </h4>
+        </section>
+        <div class="search_input_container">
+          <input
+            type="text"
+            name="search"
+            id="search"
+            placeholder="Busca tu producto aqui"
+          />
+          <div class="search_btn_container">
+            <button class="search_btn">Buscar</button>
+          </div>
+        </div>
+        <div class="nav_container">
+          <nav>
+            <ul>
+              <li class="cart_container">
+                <a href="carrito.html" class="cart active"
+                  ><i class="bi bi-cart"></i> Carrito <span id="number_of_products" class="number_of_products">0</span></a
+                >
+               
+              </li>
+              <li class="login active">
+                <a href="login.html">
+                  <i class="bi bi-box-arrow-in-right"></i>Login</a
+                >
+              </li>
+              <li class="register active">
+                <a href="register.html"
+                  ><i class="bi bi-journal-check"></i>Registrate</a
+                >
+              </li>
+              <li class="abouts_us active">
+                <a href="#"> <i class="bi bi-person-fill"></i>Sobre nosotros</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <div class="wrapper">
+        <header class="mobile_header hero">
+          <h4 class="logo">
+           Broke or Fix TecnoStore 
+          </h4>
+           
+          <button class="open_menu" id="open-menu"> <i class="bi bi-list"></i> </button>
+        </header>
+        <aside>
+          <button class="close_menu" id="close-menu"> <i class="bi bi-x"></i> </button>
+          <nav>
+            <ul class="menu">
+              <li>
+                <button id="all_products" class="btn_menu btn_category active">
+                  <i class="bi bi-caret-right-fill"></i>Volver a la tienda
+                </button>
+              </li>
+            </ul>
+            <ul class="nav_mobile">
+              <li class="cart_container">
+                <a href="carrito.html" class="cart active"
+                  ><i class="bi bi-cart"></i> Carrito <span id="number_of_products" class="number_of_products">0</span></a
+                >
+               
+              </li>
+              <li class="login active">
+                <a href="login.html">
+                  <i class="bi bi-box-arrow-in-right"></i>Login</a
+                >
+              </li>
+              <li class="register active">
+                <a href="register.html"
+                  ><i class="bi bi-journal-check"></i>Registrate</a
+                >
+              </li>
+              <li class="abouts_us active">
+                <a href="#"> <i class="bi bi-person-fill"></i>Sobre nosotros</a>
+              </li>
+            </ul>
+          </nav>
+          <footer>
+            <p>&copy Broke or Fix TecnoStore</p>
+          </footer>
+        </aside>
+        
+        <main>
+          <h2 id= "principal_title" class="principal_title">Detalles del producto</h2>
+          <div id="products_container" class="products_container">   
+        </main>
+      </div>
+</body>
+</html>

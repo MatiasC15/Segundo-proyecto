@@ -284,6 +284,10 @@ main {
 .close_menu {
   display: none;
 }
+.number_of_products_mobile{
+  display:none
+}
+
 
 /*----------------------------------------------------------MEDIA QUERIES ---------------------------------------------------------------------------------------------------------*/
 @media screen and (max-width: 1200px) {
