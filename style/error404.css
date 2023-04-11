@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    background: grey;
+  }
+
+  body {
+    width: 90%;
+    height: 90%;
+  }
+
+  h1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+  }
+
+  h3 {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+  }
+
+  img {
+    padding-left: 400px;
+    margin-top: 20px;
+    width: 35%;
+  }
+
+  .contenedor {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+  }
+  
+  button {
+    background-color: orange;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 5px;
+  }
