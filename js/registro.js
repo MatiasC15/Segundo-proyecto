@@ -26,7 +26,7 @@ form.addEventListener("submit", (e) => {
   if (
     userName.toLowerCase() === "Break Or Fix Store" ||
     userPassword === "breakorfixstore" ||
-    userEmail.toLowerCase() === "cryptoker25@gmail.com"
+    userEmail.toLowerCase() === "breakorfix@gmail.com"
   ) {
     Swal.fire({
       title: "Error!",
