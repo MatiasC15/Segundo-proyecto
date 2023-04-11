@@ -8,9 +8,9 @@ let adminExists = usersArray.some((user) => user.isAdmin);
 if (!adminExists) {
   let adminObject = {
     id: 0,
-    user: "MatiasC15",
-    email: "matiascordoba79@gmail.com",
-    password: "tute150597",
+    user: "BreakOrFixStore",
+    email: "breakorfix@gmail.com",
+    password: "breakorfix",
     isAdmin: true,
   };
   usersArray.push(adminObject);
