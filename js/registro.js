@@ -25,7 +25,7 @@ form.addEventListener("submit", (e) => {
 
   // Validar si se están ingresando las credenciales de administrador
   if (
-    userName.toLowerCase() === "Break Or Fix Store" ||
+    userName.toLowerCase() === "BreakOrFixStore" ||
     userPassword === "breakorfixstore" ||
     userEmail.toLowerCase() === "breakorfix@gmail.com"
   ) {
