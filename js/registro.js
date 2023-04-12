@@ -9,9 +9,9 @@ let usersArray =JSON.parse(db.getItem("users")) || [];
 // if (!adminExists) {
   let adminObject = {
     id: 0,
-    user: "MatiasC15",
-    email: "matiascordoba79@gmail.com",
-    password: "tute150597",
+    user: "BreakOrFixStore",
+    email: "breakorfix@gmail.com",
+    password: "breakorfix",
     isAdmin: true,
   };
 //   usersArray.push(adminObject);
@@ -27,7 +27,7 @@ form.addEventListener("submit", (e) => {
   if (
     userName.toLowerCase() === "Break Or Fix Store" ||
     userPassword === "breakorfixstore" ||
-    userEmail.toLowerCase() === "cryptoker25@gmail.com"
+    userEmail.toLowerCase() === "breakorfix@gmail.com"
   ) {
     Swal.fire({
       title: "Error!",
