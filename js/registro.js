@@ -1,11 +1,12 @@
 
 let db = localStorage;
 let form = document.querySelector("form");
-let usersArray = JSON.parse(db.getItem("users")) || [];
+let usersArray =JSON.parse(db.getItem("users")) || [];
+
 
 // Comprobar si ya existe un usuario administrador en el array
-let adminExists = usersArray.some((user) => user.isAdmin);
-if (!adminExists) {
+// let adminExists = usersArray.some((user) => user.isAdmin);
+// if (!adminExists) {
   let adminObject = {
     id: 0,
     user: "MatiasC15",
@@ -13,8 +14,8 @@ if (!adminExists) {
     password: "tute150597",
     isAdmin: true,
   };
-  usersArray.push(adminObject);
-}
+//   usersArray.push(adminObject);
+// }
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();

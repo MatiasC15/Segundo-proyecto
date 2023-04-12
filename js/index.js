@@ -2,7 +2,8 @@ let products = [
   {
     id: "periferico-01",
     name: "Auriculares HyperX Cloud",
-    image:"https://compragamer.net/pga/imagenes_publicadas/compragamer_Imganen_general_30992_Auriculares_HyperX_Cloud_Revolver_7.1_3dd11be0-grn.jpg",
+    image:
+      "https://compragamer.net/pga/imagenes_publicadas/compragamer_Imganen_general_30992_Auriculares_HyperX_Cloud_Revolver_7.1_3dd11be0-grn.jpg",
     category: {
       name: "Perifericos",
       id: "perifericos",
@@ -299,6 +300,18 @@ let products = [
     price: "244100",
     stock: "16",
   },
+  {
+    id: "componente-11",
+    name: "Gabinete Li Odyssey",
+    image:
+      "https://compragamer.net/pga/imagenes_publicadas/compragamer_Imganen_general_32695_Gabinete_Lian_Li_Odyssey_X_Silver_d754dc77-grn.jpg",
+    category: {
+      name: "Componentes",
+      id: "componentes",
+    },
+    price: "244100",
+    stock: "16",
+  }
 ];
 
 const productsContainer = document.querySelector("#products_container");
@@ -306,7 +319,10 @@ const categoriesButtons = document.querySelectorAll(".btn_category");
 const principalTitle = document.querySelector("#principal_title");
 let addButton = document.querySelectorAll(".add_product");
 const numberOfProducts = document.querySelector(".number_of_products");
-const numberOfProductsMobile = document.querySelector(".number_of_products_mobile");
+const numberOfProductsMobile = document.querySelector(
+  ".number_of_products_mobile"
+);
+let detailProduct = document.querySelectorAll(".detail_product");
 
 function chargeProducts(chosenProducts) {
   productsContainer.innerHTML = "";
@@ -329,10 +345,32 @@ function chargeProducts(chosenProducts) {
     productsContainer.append(divProduct);
   });
   updateAddButtons();
-  
 }
 
 chargeProducts(products);
+
+let detailProductArray = [];
+detailProduct.forEach((button) => {
+  button.addEventListener("click", redirectToProductDetails);
+});
+function redirectToProductDetails(e) {
+  const productId = e.currentTarget.getAttribute("data-id");
+  const productUrl = `/detalle_producto.html?id=${productId}`;
+   let detailProductArrayElement = products.find(
+    (product) => product.id === productId
+  );
+  detailProductArray.push(detailProductArrayElement);
+  localStorage.setItem("detalles-producto", JSON.stringify(detailProductArray));
+  window.location.href = productUrl;
+}
+
+
+
+
+
+
+
+
 
 categoriesButtons.forEach((button) => {
   button.addEventListener("click", (e) => {
