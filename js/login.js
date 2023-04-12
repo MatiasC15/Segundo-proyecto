@@ -19,15 +19,15 @@ form.addEventListener("submit", (e) => {
     }
 
     // Validar si se están ingresando las credenciales de administrador
-    let isAdmin = user.toLowerCase() === "matiasc15" && password === "tute150597";
-    if (isAdmin) {
-        let adminUser = usersArray.find(u => u.user === "MatiasC15");
+    let admin = user.toLowerCase() === "Break Or Fix Store" && password === "breakorfixstore";
+    if (admin) {
+        let adminUser = usersArray.find(u => u.user === "Break Or Fix Store");
         db.setItem("currentUser", JSON.stringify(adminUser));
         window.location.href = "admin.html";
         return;
     }
 
-    let currentUser = usersArray.find(u => u.user === user && u.password === password);
+    let currentUser = usersArray.find(user => user.user === user && user.password === password);
 
     if (currentUser) {
         db.setItem("currentUser", JSON.stringify(currentUser));
