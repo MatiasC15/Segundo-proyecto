@@ -406,3 +406,40 @@
 
 
 
+// productsInCart = [];
+//   productsCartLS = 
+// function addCart(e) {
+//   const idButton = e.currentTarget.id;
+//   const addedProduct = products.find((product) => product.id === idButton);
+
+//   if (productsInCart.some((product) => product.id === idButton)) {
+//     const index = productsInCart.findIndex(
+//       (product) => product.id === idButton
+//     );
+//     productsInCart[index].quantity++;
+//   } else {
+//     addedProduct.quantity = 1;
+//     productsInCart.push(addedProduct);
+//   }
+//   updateNumberOfProducts();
+//   updateNumberOfProductsMobile();
+
+//   localStorage.setItem("productsInCart", JSON.stringify(productsInCart));
+// }
+
+// function updateNumberOfProducts() {
+//   let newNumber = productsInCart.reduce(
+//     (acc, product) => acc + product.quantity,
+//     0
+//   );
+
+//   numberOfProducts.innerText = newNumber;
+// }
+// function updateNumberOfProductsMobile() {
+//   let newNumber = productsInCart.reduce(
+//     (acc, product) => acc + product.quantity,
+//     0
+//   );
+
+//   numberOfProductsMobile.innerText = newNumber;
+// }

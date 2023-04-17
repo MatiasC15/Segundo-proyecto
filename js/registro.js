@@ -7,7 +7,7 @@ let adminExists = usersArray.some((user) => user.isAdmin);
 if (!adminExists) {
   let adminObject = {
     id: 0,
-    user: "break or fixe admin",
+    user: "breakorfixadmin",
     email: "breakorfix@gmail.com",
     password:"BreakOrFixed2023",
     isAdmin: true,
@@ -23,9 +23,9 @@ form.addEventListener("submit", (e) => {
 
   // Validar si se están ingresando las credenciales de administrador
   if (
-    userName.toLowerCase() === "matiasc15" ||
-    userPassword === "tute150597" ||
-    userEmail.toLowerCase() === "matiascordoba79@gmail.com"
+    userName.toLowerCase() === "breakorfixadmin" ||
+    userPassword === "BreakOrFixed2023" ||
+    userEmail.toLowerCase() === "breakorfix@gmail.com"
   ) {
     Swal.fire({
       title: "Error!",

@@ -56,7 +56,7 @@ let products = [
     artc: 5,
     id: "monitor-04",
     name: "Monitor Viewsonic 27 Elite ",
-    imge: "https://compragamer.net/pga/imagenes_publicadas/compragamer_Imganen_general_22739_Monitor_Viewsonic_27__Elite_XG270_240Hz_1Ms_80bab1ec-grn.jpg",
+    imge: "https://compragamer.net/pga/imagenes_publicadas/compragamer_Imganen_general_35325_Monitor_ViewSonic_24.5__XG251G_360Hz_IPS_bde6724f-grn.jpg",
     category: {
       name: "Monitores",
       id: "monitores",
@@ -339,10 +339,6 @@ let products = [
   },
 ];
 
-function guardarEnLocalStorage() {
-  localStorage.setItem('products', JSON.stringify(products));
-}
-
 function agregarDatos() {
   const table = document.getElementById("myTable").getElementsByTagName("tbody")[0];
   if (table.hasChildNodes()) {
@@ -371,6 +367,11 @@ function agregarDatos() {
       ')">Editar</button>';
   }
 }
+function guardarEnLocalStorage() {
+  localStorage.setItem('products', JSON.stringify(products));
+}
+
+
 
 window.onload = function () {
   agregarDatos();

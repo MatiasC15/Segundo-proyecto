@@ -19,11 +19,11 @@ form.addEventListener("submit", (e) => {
     }
 
     // Validar si se están ingresando las credenciales de administrador
-    let isAdmin = user.toLowerCase() === "matiasc15" && password === "tute150597";
+    let isAdmin = user.toLowerCase() === "breakorfixadmin" && password === "BreakOrFixed2023";
     if (isAdmin) {
-        let adminUser = usersArray.find(u => u.user === "MatiasC15");
+        let adminUser = usersArray.find(u => u.user === "breakorfixadmin");
         db.setItem("currentUser", JSON.stringify(adminUser));
-        window.location.href = "admin.html";
+        window.location.href = "administracion.html";
         return;
     }
 
@@ -33,7 +33,7 @@ form.addEventListener("submit", (e) => {
         db.setItem("currentUser", JSON.stringify(currentUser));
 
         if (currentUser.isAdmin) {
-            window.location.href = "admin.html";
+            window.location.href = "administracion.html";
         } else {
             window.location.href = "index.html";
         }

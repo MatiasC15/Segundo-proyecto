@@ -1,4 +1,4 @@
-let productsInCart = JSON.parse(localStorage.getItem("products"));
+let productsInCart = JSON.parse(localStorage.getItem("productsInCart"));
 
 const emptyCart = document.querySelector("#empty_cart");
 const productsContainer = document.querySelector("#products_container");
@@ -76,14 +76,14 @@ function eraseFromCart(e) {
     productsInCart.splice(index, 1);
     updateProductsInCart();
 
-    localStorage.setItem("products", JSON.stringify(productsInCart));
+    localStorage.setItem("productsInCart", JSON.stringify(productsInCart));
 
 }
 deleteAllButton.addEventListener("click", deleteAll)
 
 function deleteAll() {
 productsInCart.length = 0;
-localStorage.setItem("products" , JSON.stringify(productsInCart))
+localStorage.setItem("productsInCart" , JSON.stringify(productsInCart))
 updateProductsInCart()
 }
 function updateTotalPrice(){
@@ -105,7 +105,7 @@ function buyAll() {
     }).then((result) => {
       if (result.isConfirmed) {
         productsInCart.length = 0;
-        localStorage.setItem("products", JSON.stringify(productsInCart));
+        localStorage.setItem("productsInCart", JSON.stringify(productsInCart));
         productsContainer.classList.add("disabled");
         cartActions.classList.add("disabled");
         emptyCart.classList.remove("disabled");
