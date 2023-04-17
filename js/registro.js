@@ -1,4 +1,3 @@
-
 let db = localStorage;
 let form = document.querySelector("form");
 let usersArray = JSON.parse(db.getItem("users")) || [];
@@ -8,9 +7,9 @@ let adminExists = usersArray.some((user) => user.isAdmin);
 if (!adminExists) {
   let adminObject = {
     id: 0,
-    user: "MatiasC15",
-    email: "matiascordoba79@gmail.com",
-    password: "tute150597",
+    user: "breakorfixadmin",
+    email: "breakorfix@gmail.com",
+    password:"BreakOrFixed2023",
     isAdmin: true,
   };
   usersArray.push(adminObject);
@@ -24,9 +23,9 @@ form.addEventListener("submit", (e) => {
 
   // Validar si se están ingresando las credenciales de administrador
   if (
-    userName.toLowerCase() === "matiasc15" ||
-    userPassword === "tute150597" ||
-    userEmail.toLowerCase() === "matiascordoba79@gmail.com"
+    userName.toLowerCase() === "breakorfixadmin" ||
+    userPassword === "BreakOrFixed2023" ||
+    userEmail.toLowerCase() === "breakorfix@gmail.com"
   ) {
     Swal.fire({
       title: "Error!",

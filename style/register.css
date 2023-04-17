@@ -124,46 +124,49 @@ body{
   background-color: #eda315;
   border-radius: 30%;
 }
-
-
-
-/*-------------------------------------------------------------------------------------------------------------------------------------------*/
-
+/*-----------------------------------------------------------------------------------*/
+/*---------------------------Wrapper-------------------------------------------------*/
 .wrapper{
-  margin: 10rem;
-	display:flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.login_container{
+    margin: 10rem;
+      display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .register_container{
     padding: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
     height: auto;
     width: 40%;
     border: 1px solid var(--main-color);
     border-radius: .5rem;
     background-color: var(--titles-letters);
 }
-.login_container h1 {
+.register_container h1 {
   color: var(--font-color);
 }
 form{
   color: var(--font-color);
     display: flex;
+    gap: .5rem;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     width: 100%;
-
+}
+form h2{
+    margin-bottom: 1rem;
 }
 .button_container{
     display: flex;
     justify-content: center;
 }
 form button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: .5rem;
     width: 8rem;
     height: 2rem;
     color: #e2f4ff;
@@ -181,10 +184,10 @@ form label{
     height: 2rem;
     border-radius: .5rem;
     border-style: none;
-    width: 60%;
+    width: 80%;
 }
 input{
-  padding: .5rem;
-}
+    padding: .5rem;
+  }
 
-
+/*-----------------------------------------------------------------------------------*/
