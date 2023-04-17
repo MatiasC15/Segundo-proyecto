@@ -8,23 +8,72 @@
     <title>Login page</title>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
+<header class="header_container">
+    <section class="hero">
+      <h4 class="logo">
+        <a href="index.html"
+          >Broke or Fix <br /><span class="logo">TecnoStore</span></a
+        >
+      </h4>
+    </section>
+    <div class="search_input_container">
+      <input
+        type="text"
+        name="search"
+        id="search"
+        placeholder="Busca tu producto aqui"
+      />
+      <div class="search_btn_container">
+        <button class="search_btn">Buscar</button>
+      </div>
+    </div>
+    <div class="nav_container">
+      <nav>
+        <ul>
+          <li class="cart_container">
+            <a href="carrito.html" class="cart active"
+              ><i class="bi bi-cart"></i> Carrito <span id="number_of_products" class="number_of_products">0</span></a
+            >
+           
+          </li>
+          <li class="login active">
+            <a href="login.html">
+              <i class="bi bi-box-arrow-in-right"></i>Login</a
+            >
+          </li>
+          <li class="register active">
+            <a href="register.html"
+              ><i class="bi bi-journal-check"></i>Registrate</a
+            >
+          </li>
+          <li class="abouts_us active">
+            <a href="#"> <i class="bi bi-person-fill"></i>Sobre nosotros</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 <body>
-	<div class="login_container">
-		<h1>Login</h1>
-	<form>
-		<label for="user">Usuario:</label>
-		<input type="user" id="user" name="user">
-		<br>
-		<label for="password">Contraseña:</label>
-		<input type="password" id="password" name="password" >
-		<br>
-		<div class="button_container">
-			<button type="submit">Iniciar sesión</button>
+	<div class="wrapper">
+		<div class="login_container">
+			<h1>Login</h1>
+		<form>
+			<label for="user">Usuario:</label>
+			<input type="user" id="user" name="user">
+			<br>
+			<label for="password">Contraseña:</label>
+			<input type="password" id="password" name="password" >
+			<br>
+			<div class="button_container">
+				<button type="submit">Iniciar sesión</button>
+			</div>
+		</form>
 		</div>
-	</form>
+		<script src="../js/login.js"></script>
+		<script src="index.html"></script>
+		<script src="../js/menu.js"></script>
 	</div>
-    <script src="../js/login.js"></script>
-	<script src="index.html"></script>
+
 	
 
 

@@ -27,10 +27,115 @@ h1,h2,h3,h4,p,a,input {
 body{
     height: 100vh;
     width: 100%;
-    display:flex;
-    justify-content: center;
-    align-items: center;
 }
+/*--------------------------------header-----------------------------------------------------------------------------------------------------*/
+
+.header_container {
+  background-color: #003f62;
+  width: 100%;
+  height: 6rem;
+  /* margin-bottom: 2rem; */
+}
+.header_container,
+.search_input_container,
+.nav_container ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hero {
+  font-size: 1.5rem;
+  margin-left: 3rem;
+  text-align: center;
+  color: var(--font-color);
+}
+.hero a {
+  text-decoration: none;
+  color: var(--font-color);
+}
+.nav_container nav ul{
+  list-style-type: none;
+}
+.nav_container nav ul li a {
+  display: flex;
+  gap: 0.5rem;
+  color: var(--font-color);
+  text-decoration: none;
+}
+.search_input_container {
+  width: 30rem;
+  height: 100%;
+}
+#search {
+  width: 70%;
+  padding: 0;
+  margin: 0;
+  height: 2.5rem;
+  border-style: none;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  padding-left: 0.8rem;
+}
+#search:focus {
+  outline: none;
+  border: none;
+}
+.search_btn_container {
+  width: 30%;
+  padding: 0;
+  margin-left: 0;
+}
+.search_btn {
+  height: 2.5rem;
+  background-color: var(--some-buttons);
+  border-style: none;
+  border-radius: 1rem;
+  width: 90%;
+  position: relative;
+  left: -2rem;
+}
+.search_btn:hover {
+  background-color: var(--some-buttons-hover);
+}
+.nav_container nav {
+  height: 100%;
+  margin-right: 3rem;
+}
+.nav_container nav ul {
+  display: flex;
+  gap: 4rem;
+  color: var(--font-color);
+}
+.nav_container nav ul li a {
+  display: flex;
+  gap: 0.5rem;
+  color: var(--font-color);
+}
+.nav_container nav ul li a:hover {
+  color: var(--some-buttons-hover);
+  transition: 0.2s all;
+}
+.number_of_products,
+.number_of_products_mobile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.8rem;
+  background-color: #eda315;
+  border-radius: 30%;
+}
+
+
+
+/*-------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.wrapper{
+  margin: 10rem;
+	display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .login_container{
     padding: 1rem;
     display: flex;
@@ -38,12 +143,19 @@ body{
     align-items: center;
     gap: 1rem;
     height: auto;
-    width: 60%;
-    border: 1px solid red;
+    width: 40%;
+    border: 1px solid var(--main-color);
+    border-radius: .5rem;
+    background-color: var(--titles-letters);
+}
+.login_container h1 {
+  color: var(--font-color);
 }
 form{
+  color: var(--font-color);
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: 100%;
 
 }
@@ -52,10 +164,27 @@ form{
     justify-content: center;
 }
 form button {
-    width: 40%;
+    width: 8rem;
     height: 2rem;
+    color: #e2f4ff;
+    background-color: #eda315;
+    border-radius: .5rem;
+    border-style: none;
+    cursor: pointer;
+}
+
+form button:hover{
+  background-color: var(--some-buttons-hover);
 }
 form input,
 form label{
     height: 2rem;
+    border-radius: .5rem;
+    border-style: none;
+    width: 60%;
 }
+input{
+  padding: .5rem;
+}
+
+
